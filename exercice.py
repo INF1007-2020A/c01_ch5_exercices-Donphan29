@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
+import math 
 from typing import List
 
 def convert_to_absolute() -> float:
@@ -11,13 +11,34 @@ def convert_to_absolute() -> float:
 
 
 def use_prefixes() -> List[str]:
-    prefixes, suffixes = 'JKLMNOP', 'ack'
+    prefixes, suffixes = 'JKLMNOPQ', 'ack'
+    
+    nom = []
+    for letter in prefixes : 
+        nom.append(letter + suffixes)
 
-    return [""]
+    return nom
 
 
 def prime_integer_summation() -> int:
-    return 0
+
+    primes = []
+    i = 2 
+
+    while len(primes) < 100 : 
+        is_prime = True 
+
+        for divider in range(2, int(math.sqrt(i)) + 1) : 
+            if i % divider == 0 : 
+                is_prime = False 
+                break
+        
+        if is_prime : 
+            primes.append(i) 
+
+        i += 1
+
+    return sum(primes)
 
 
 def factorial(number: int) -> int:
@@ -29,7 +50,7 @@ def use_continue() -> None:
 
 
 def main() -> None:
-    print(f"La valeur absolue du nombre est {convert_to_absolute()}")
+    print(f"La valeur absolue du nombre est: {convert_to_absolute()}")
 
     print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
