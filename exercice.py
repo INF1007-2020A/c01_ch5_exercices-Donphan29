@@ -4,9 +4,10 @@
 
 from typing import List
 
-
 def convert_to_absolute() -> float:
-    return 0.0
+    nombre = input("Entrez un nombre: ")
+    abs_nombre = abs(int(nombre))
+    return abs_nombre
 
 
 def use_prefixes() -> List[str]:
