@@ -42,11 +42,25 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    return 0
+    number = int(input("Entrez un nombre: "))
+    factorial = 1 
+
+    for i in range(1, number + 1) : 
+        factorial = factorial*i 
+
+    #source : https://www.programiz.com/python-programming/examples/factorial
+
+    return factorial 
 
 
 def use_continue() -> None:
-    pass
+
+    for i in range(1, 11) : 
+        if i == 5 : 
+            continue 
+        print(i)
+
+    pass 
 
 
 def main() -> None:
