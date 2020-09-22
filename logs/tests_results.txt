@@ -1,23 +1,20 @@
-test_factorial (__main__.TestExercice) ... FAIL
+test_factorial (__main__.TestExercice) ... ERROR
 test_prefixes (__main__.TestExercice) ... ok
 test_summation (__main__.TestExercice) ... ok
 
 ======================================================================
-FAIL: test_factorial (__main__.TestExercice)
+ERROR: test_factorial (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 50, in test_factorial
-    'Erreur dans le remplacement de caractère'
-AssertionError: Lists differ: [0, 0, 0, 0] != [1, 6, 40320, 3628800]
-
-First differing element 0:
-0
-1
-
-- [0, 0, 0, 0]
-+ [1, 6, 40320, 3628800] : Erreur dans le remplacement de caractère
+  File "test_exercice.py", line 44, in test_factorial
+    output = [exercice.factorial(v) for v in values]
+  File "test_exercice.py", line 44, in <listcomp>
+    output = [exercice.factorial(v) for v in values]
+  File "/home/runner/work/c01_ch5_exercices-Donphan29/c01_ch5_exercices-Donphan29/exercice.py", line 45, in factorial
+    number = int(input("Entrez un nombre: "))
+EOFError: EOF when reading a line
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.001s
 
-FAILED (failures=1)
+FAILED (errors=1)
