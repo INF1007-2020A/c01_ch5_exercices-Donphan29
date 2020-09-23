@@ -1,20 +1,8 @@
-test_factorial (__main__.TestExercice) ... ERROR
+test_factorial (__main__.TestExercice) ... ok
 test_prefixes (__main__.TestExercice) ... ok
 test_summation (__main__.TestExercice) ... ok
-
-======================================================================
-ERROR: test_factorial (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 44, in test_factorial
-    output = [exercice.factorial(v) for v in values]
-  File "test_exercice.py", line 44, in <listcomp>
-    output = [exercice.factorial(v) for v in values]
-  File "/home/runner/work/c01_ch5_exercices-Donphan29/c01_ch5_exercices-Donphan29/exercice.py", line 45, in factorial
-    number = int(input("Entrez un nombre: "))
-EOFError: EOF when reading a line
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.001s
 
-FAILED (errors=1)
+OK
