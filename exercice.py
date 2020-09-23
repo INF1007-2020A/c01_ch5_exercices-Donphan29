@@ -42,15 +42,15 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    number = int(input("Entrez un nombre: "))
-    factorial = 1 
+    # number = int(input("Entrez un nombre: "))
+    # factorial = 1 
 
-    for i in range(1, number + 1) : 
-        factorial = factorial*i 
+    # for i in range(1, number + 1) : 
+    #     factorial = factorial*i 
 
     #source : https://www.programiz.com/python-programming/examples/factorial
 
-    return factorial 
+    return math.factorial(number)
 
 
 def use_continue() -> None:
